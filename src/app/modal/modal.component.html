@@ -1,0 +1,9 @@
+<ng-template [ngIf]="modalState$ | async">
+  <div class="modal">
+    <div class="modal_body">
+      <button class="modal_close-btn">Close</button>
+      <ng-content></ng-content>
+    </div>
+  </div>
+  <div class="modal_background"></div>
+</ng-template>
